@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 import pandas as pd
 from io import BytesIO
@@ -25,6 +23,7 @@ if uploaded_file and x and y and i and j:
 
             if 'time' not in df.columns or 'Volume' not in df.columns or 'Price' not in df.columns:
                 st.error("❌ CSV must contain 'time', 'Volume', and 'Price' columns.")
+                st.stop()
             else:
                 # Clean & sort
                 df = df[df['Volume'] != 0].copy()
