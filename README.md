@@ -35,8 +35,6 @@ A **Streamlit-based web application** that allows users to upload Excel or CSV f
 - Add support for **multiple file uploads**
 - Implement **unit tests** for core functions
 - Add **authentication** layer (if required)
-- Use **GitHub Actions** for CI/CD
-- Optimize **Dockerfile** to reduce size
 
 ---
 
