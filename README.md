@@ -3,6 +3,9 @@
 A **Streamlit-based web application** that allows users to upload Excel or CSV files, automatically formats and cleans the data (removing dangerous characters, fixing column types, etc.), and exports a sanitized version for download.
 
 ---
+## 🚀 Demo
+
+Check out the live app here: [https://your-streamlit-app-url.streamlit.app](https://aiengineer-dataprocessingtool-fejphjszzjqwpg3knedvcm.streamlit.app/))
 
 ## ✅ Technologies Used
 
