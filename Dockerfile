@@ -1,24 +1,24 @@
-# Use official Python image
 FROM python:3.10-slim
 
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
+# Set environment variables to prevent pyc files and enable logging
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1
 
-# Set working directory
+# Setting working directory
 WORKDIR /app
 
-# Copy dependency file
+# Installing system dependencies
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
+
+# Installing Python dependencies
 COPY requirements.txt .
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
 
-# Install dependencies securely
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir -r requirements.txt && \
-    pip install --no-cache-dir pip-audit && \
-    pip-audit || true
-
-# Copy entire app folder
-COPY app.py .
+# Copy the rest of the application
+COPY . .
 
 # Expose Streamlit port
 EXPOSE 8501
