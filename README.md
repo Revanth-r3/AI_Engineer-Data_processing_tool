@@ -46,9 +46,8 @@ Check out the live app here: [https://your-streamlit-app-url.streamlit.app](http
 ### 🔹 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Revanth-r3/my-streamlit-app.git
-cd my-streamlit-app
-
+git clone https://github.com/Revanth-r3/AI_Engineer-Data_processing_tool.git
+cd AI_Engineer-Data_processing_tool
 
 ```
 ### 🔹 2. Local Setup
@@ -74,3 +73,12 @@ docker build -t my-streamlit-app .
 # Run container
 docker run -p 8501:8501 my-streamlit-app
 ```
+
+### Open the localhost link
+
+```
+http://localhost:8501
+
+Then upload the input data and enter the other manual inpouts and generate output
+```
+
