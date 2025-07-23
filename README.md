@@ -79,6 +79,6 @@ docker run -p 8501:8501 my-streamlit-app
 ```
 http://localhost:8501
 
-Then upload the input data and enter the other manual inpouts and generate output
+Then upload the input data and enter the other manual inputs and generate output
 ```
 
