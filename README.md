@@ -82,3 +82,9 @@ http://localhost:8501
 Then upload the input data and enter the other manual inputs and generate output
 ```
 
+### 📂 Sample Data
+```
+A sample input file (`sample_data.csv`) is included in the `/data` folder. You can use this to test the app.
+
+You can also upload your own CSV file with similar structure to see how the app processes real data.
+```
