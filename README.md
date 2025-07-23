@@ -46,12 +46,13 @@ Check out the live app here: [https://your-streamlit-app-url.streamlit.app](http
 ### 🔹 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/my-streamlit-app.git
+git clone https://github.com/Revanth-r3/my-streamlit-app.git
 cd my-streamlit-app
+
 
 ```
 ### 🔹 2. Local Setup
-
+`
 ```
 # Create a virtual environment
 python -m venv venv
